@@ -4,28 +4,114 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="stylesheet/homepage.css" />
-
-        <title>park name wowwowow</title>
+        <link rel="stylesheet" href="stylesheet/header.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Park Name</title>
     </head>
     <body>
-        <div class="home-container">
-            <div class="header">header</div>
-            <div class="hero">big img</div>
-            <div class="quick-buy">woah</div>
-            <div class="main-atrn">main 3? atrns</div>
-            <div class="events">events</div>
-            <div class="pyt">plan ur trip</div>
-            <div class="footer">foot</div>
+        <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo"><a href="homepage.html"><img src="/images/Cat-logo.png" alt="logo"></a></li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a class="active" href="/homepage.html"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="attractions.html"><i class="fa fa-tint"></i>Attractions</a></li>
+                    <li><a href="ticketing.html"><i class="fa fa-ticket"></i> Ticketing</a></li>
+                    <li><a href="ticketing.html"><i class="fa fa-usd"></i>Buy Tickets</a></li>
+                    <label for="check" class="close-menu"><i class="fa fa-times"></i></label>
+                </span>
+                 <label for="check" class="close-menu"><i class="fa fa-bars"></i></label>
+            </ul>
+        </div> 
+        </nav>
+        </header>
+
+        <div class="hero">
+            <h1>Cool off this summer</h1>
+            <p>bottom text</p>
         </div>
-        <!-- 
-            header: logo > navigation bar > buy tickets
-            body:
-            1. image banner/carousel
-            2. opening hours > weather icon > buy tickets
-            3. main attractions > 3 images
-            4. what's on > 2 events carousel
-            5. plan your trip x4
-            footer
-        -->
+
+        <main>
+            <div class="today-info">
+                <div class="today-hours">
+                    <div class="todays-date">1 January 2025</div>
+                    <div class="opening-hours">09:00 — 22:00</div>
+                </div>
+                <div class="today-closures">
+                    <div class="closures">none</div>
+                </div>
+            </div>
+
+            <div class="atrn-main">
+                <div class="section-text">
+                    <h4 class="section-header">Make a splash</h4>
+                    <p class="section-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut unde, impedit numquam, natus deleniti consequuntur incidunt quia iusto quod cupiditate voluptatem repellendus
+                        mollitia nobis cum, quas est ratione voluptatum nisi?
+                    </p>
+                </div>
+                <div class="atrn-list">
+                    <div class="atrn-card" id="atrn-card-1">
+                        <div class="atrn-name">Water Coaster</div>
+                    </div>
+                    <div class="atrn-card" id="atrn-card-2">
+                        <div class="atrn-name">Water Slide</div>
+                    </div>
+                    <div class="atrn-card" id="atrn-card-3">
+                        <div class="atrn-name">Surfing</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="events">
+                <div class="section-text">
+                    <h4 class="section-header">What's On</h4>
+                </div>
+                <div class="events-card">
+                    <img src="images/aerial-park.jpg" alt="event name" />
+                    <div class="events-text">
+                        <h5><b>event name</b></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="events-card">
+                    <img src="images/aerial-park.jpg" alt="event name" />
+                    <div class="events-text">
+                        <h5><b>event name</b></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pyt-main">
+                <div class="section-text">
+                    <h4 class="section-header">Plan Your Trip</h4>
+                </div>
+
+                <div class="pyt-list">
+                    <div class="pyt-card" id="pyt-card-1">
+                        <div class="pyt-img"><img src="svg/shopping.svg" /></div>
+                        <div class="pyt-name">shopping</div>
+                    </div>
+                    <div class="pyt-card" id="pyt-card-2">
+                        <a href="attractions.html">
+                            <div class="pyt-img"><img src="svg/map.svg" /></div>
+                            <div class="pyt-name">park map</div>
+                        </a>
+                    </div>
+                    <div class="pyt-card" id="pyt-card-3">
+                        <div class="pyt-img"><img src="svg/directions.svg" /></div>
+                        <div class="pyt-name">getting here</div>
+                    </div>
+                    <div class="pyt-card" id="pyt-card-4">
+                        <div class="pyt-img"><img src="svg/maintenance.svg" /></div>
+                        <div class="pyt-name">maintenance</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer></footer>
     </body>
 </html>
